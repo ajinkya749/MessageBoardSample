@@ -9,13 +9,14 @@ Cloning:
 git clone https://github.com/ajinkya749/MessageBoardSample.git
 
 Installing node packages for client as well as server:
-run npm install
-move to server forlder & run npm install
+-npm install
+move to server forlder & 
+- run npm install
 
 Installing concurrently package:
 
 In root folder run command to install concurrently package
-npm install -g concurrently
+ -npm install -g concurrently
 
-#5. Run npm start to start the application:
- npm start
+Run npm start to start the application:
+  -npm start
