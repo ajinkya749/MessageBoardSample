@@ -35,12 +35,12 @@ class EditorComponent extends React.Component {
   render() {
     return (
       this.props.selectedId ? (
-        <form onSubmit={() => this.handleSubmit} className="form-group">
+        <form onSubmit={this.handleSubmit} className="form-group">
           <label htmlFor="comment">
             <textarea
               value={this.state.value}
               onChange={this.handleChange}
-              class="form-control"
+              className="form-control"
               rows="5"
               id="comment"
             />
