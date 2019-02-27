@@ -1,0 +1,30 @@
+{
+  "name": "messageboard",
+  "version": "1.0.0",
+  "description": "POC",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-scripts": "2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run server\" \"npm run start-client\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start-client": "react-scripts start",
+    "server": "cd server && npm start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "author": "Ajinkya kakade",
+  "license": "ISC"
+}
