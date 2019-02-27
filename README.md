@@ -11,7 +11,7 @@ git clone https://github.com/ajinkya749/MessageBoardSample.git
 Installing node packages for client as well as server:
 -npm install
 move to server forlder & 
-- run npm install
+-run npm install
 
 Installing concurrently package:
 
