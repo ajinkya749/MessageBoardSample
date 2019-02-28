@@ -41,7 +41,7 @@ class App extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-4">
-              <ChannelComponent channels={this.state.channels} selectChannel={this.selectChannel} />
+              <ChannelComponent channels={this.state.channels} selectChannel={this.selectChannel} selectedId={this.state.selectedId}/>
             </div>
             <div className="col-sm-4">
               <MessageBoardComponent
