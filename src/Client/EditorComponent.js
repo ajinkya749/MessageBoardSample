@@ -46,10 +46,13 @@ class EditorComponent extends React.Component {
               id="comment"
             />
           </label>
-          <input type="submit" value="Submit" type="button" className="btn btn-primary" />
+          <input type="submit" value="Submit" className="btn btn-primary" />
         </form>
       ) : (
-        <h4>Select a Channel</h4>
+        <div>
+         <h4>Select a Channel</h4>                                                                                                                                  
+        </div>
+        
       )
     );
   }

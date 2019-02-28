@@ -2,14 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 function MessageBoardComponent(props) {
-  return props.messages ? (
+  return (props.messages ? (
     <ul className="list-group">
       {props.messages.map(item => (
-        <li className="list-group-item">{item}</li>
+        <li className="list-group-item" key={item}>{item}</li>
       ))}
     </ul>
-  ) : (
+    ) : (
     <h4>Select a Channel</h4>
+    )
   );
 }
 
