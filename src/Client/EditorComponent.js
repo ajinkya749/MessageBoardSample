@@ -10,6 +10,7 @@ class EditorComponent extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+
   }
 
   handleChange(event) {
@@ -46,7 +47,7 @@ class EditorComponent extends React.Component {
               id="comment"
             />
           </label>
-          <input type="submit" value="Submit" className="btn btn-primary" />
+          <input type="submit" value="Submit" className="btn btn-primary" disabled={!this.state.value}/>
         </form>
       ) : null  
       
