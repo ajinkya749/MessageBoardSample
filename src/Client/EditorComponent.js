@@ -17,7 +17,6 @@ class EditorComponent extends React.Component {
   }
 
   async handleSubmit(event) {
-    alert("An essay was submitted: " + this.state.value);
     const obj = {
       message:this.state.value
     }
@@ -30,6 +29,8 @@ class EditorComponent extends React.Component {
       body:JSON.stringify(obj)
     });
     const json = await response.json();
+    this.props.selectChannel(this.props.selectedId);
+    alert("your message was submitted sucessfully: " + this.state.value);
   }
 
   render() {
@@ -45,7 +46,7 @@ class EditorComponent extends React.Component {
               id="comment"
             />
           </label>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" type="button" className="btn btn-primary" />
         </form>
       ) : (
         <h4>Select a Channel</h4>

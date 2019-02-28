@@ -49,7 +49,7 @@ class App extends React.Component {
               />
             </div>
             <div className="col-sm-4">
-              <EditorComponent selectedId={this.state.selectedId} />
+              <EditorComponent selectedId={this.state.selectedId} selectChannel={this.selectChannel}/>
             </div>
           </div>
         </div>
