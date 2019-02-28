@@ -48,12 +48,8 @@ class EditorComponent extends React.Component {
           </label>
           <input type="submit" value="Submit" className="btn btn-primary" />
         </form>
-      ) : (
-        <div>
-         <h4>Select a Channel</h4>                                                                                                                                  
-        </div>
-        
-      )
+      ) : null  
+      
     );
   }
 }

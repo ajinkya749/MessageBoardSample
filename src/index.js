@@ -16,7 +16,6 @@ class App extends React.Component {
       selectedId: ""
     };
     this.selectChannel = this.selectChannel.bind(this);
-    this.disableDispaly = this.disableDispaly.bind(this);
   }
 
   //called when selecting channel
@@ -35,11 +34,6 @@ class App extends React.Component {
     
   }
 
-  disableDispaly(){
-    let style = this.state.selectedId ? {opacity: 1} :{opacity: 0.5, backgroundColor:'#000'} 
-    return style; 
-  }
-
   render() {
     return (
       <div className="App">
@@ -54,7 +48,7 @@ class App extends React.Component {
                 messages={this.state.messages}
               />
             </div>
-            <div className="col-sm-4" style={this.disableDispaly()}>
+            <div className="col-sm-4">
               <EditorComponent selectedId={this.state.selectedId} selectChannel={this.selectChannel}/>
             </div>
           </div>
